@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+html, body{
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+	color: #FFF;
+}
+#home{
+
+	display: table;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+.landing-text{
+	display: table-cell;
+	vertical-align: top;
+	text-align: center;
+}
+h1{
+	font-family: 'Montserrat',sans-serif;
+	font-size: 550%;
+	line-height: 1.7;
+}
+h3{
+	font-size: 260%;
+	font-weight: 500;
+	line-height: 5;
+
+}
+.btn-default{
+	background-color: #FFA500;
+	color: #36342F;
+	font-size: 200%;
+}
+.btn-default:hover{
+	color: #FFF;
+	background-color: #228B22;
+}
