@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Handwritten Digit Recognition System</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    body{
+        background-image: url("https://www.icapitalkkrpmfund.com/wp-content/uploads/2021/06/media-0321-03.png");
+        background-size: cover;
+    }
+   .fit-image{
+        width: 100%;
+        object-fit: cover;
+        height: 200px; /* only if you want fixed height */
+
+    }
+   .img{
+       height: 200px;
+       width: 200px;
+   }
+</style>
+<body>
+<div class="head">
+    <div class="container">
+        <h1 style="color: #ffffff;text-align: center">Vi Institute of Technology</h1>
+    </div>
+</div>
+<div class="container">
+    <div id="content" style="...">
+        <div class="container">
+            <div class="row">
+
+                <div class="col">
+                    <div class="text-center"><img src="https://www.vimicrosystems.com/assets/img/home/viit.jpg" sizes="img-responsive fit-image"  alt="image"></div>
+                </div>
+
+                <div class="col text-center">
+                    <form action="/web" method="post" enctype="multipart/form-data">
+                        <h3 class = "page-header text-primary" style="color: #FFFFFF">Upload Image</h3>
+                        <div class="form-group">
+                            <label style="color: #FFFFFF">Browse Image</label>
+                            <input style="font-size:100%"type="file" class="form-control" name="imagefile">
+                        </div>
+                        <div class="text-center">
+                            <input class="btn btn-primary mt-3" type="submit" value="Predict">
+                        </div>
+                    </form>
+                        <div>
+                            {% if prediction%}
+                                <p style="font-size:200%; color:#FFFFFF;" class="text-center">Predicted Number is {{prediction}} %</p>
+                            {% endif %}
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
